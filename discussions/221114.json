@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "471958",
+    "ThreadId": "221114",
+    "Html": "<p>Hi,</p>\r\n<p>I download source code try to run application EventSourcing-Simplified. However, there are define DB name in connection string Initial Catalog &quot;DDDSampleCQRS&quot;, do we need to create new DB in local Sql Server ? If so what about table, does system create table itself into &quot;DDDSampleCQRS&quot; DB. I Cannot understand &quot;reset your database before using booking/tracking UI.&quot;?</p>\r\n<p>&nbsp;</p>\r\n<p>Thank you,</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>Regards and Meeta,</p>\r\n<p>Bhagi Raj Limbu</p>",
+    "PostedDate": "2010-07-24T01:10:29.357-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "472295",
+    "ThreadId": "221114",
+    "Html": "<p>The existance of DB is mandatory, but all the tables in the database are created automatically when you hit &quot;Reset database&quot; button in application menu (after application starts).</p>",
+    "PostedDate": "2010-07-25T04:00:08.817-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "472892",
+    "ThreadId": "221114",
+    "Html": "<p>Hi Szymon,</p>\r\n<p>&nbsp;</p>\r\n<p>Thank you very for your reply, I hit &quot;Reset database&quot;. However, it throw an error &quot;The specified schema name &quot;domain&quot; either does not exist or you do not have permission to use it.&quot; Does it require special permission? or do i required to create any other object in database.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>Thank you,</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>Regards and Meeta,</p>\r\n<p>Sailung Limbu</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-07-26T17:15:12.98-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "472978",
+    "ThreadId": "221114",
+    "Html": "Oh, I am sorry. Schemas must be created manually, I forgot to tell you. You have to create schema &quot;reporting&quot; and &quot;domain&quot; in the database and (hopefully) everything will work fine.<div><br></div><div>Szymon<br>\r\n<br><div>2010/7/27 sailunglimbu <span dir=ltr>&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span><br><blockquote style=\"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex\">\r\n   <div> <p>From: sailunglimbu</p> <div><p>Hi Szymon,</p>\r\n<p> </p>\r\n<p>Thank you very for your reply, I hit &quot;Reset database&quot;. However, it throw an error &quot;The specified schema name &quot;domain&quot; either does not exist or you do not have permission to use it.&quot; Does it require special permission? or do i required to create any other object in database.</p>\r\n<div>\r\n<p> </p>\r\n<p> </p>\r\n<p>Thank you,</p>\r\n<p> </p>\r\n<p> </p>\r\n<p>Regards and Meeta,</p>\r\n</div><p>Sailung Limbu</p>\r\n<p> </p>\r\n<p> </p>\r\n<p> </p></div><div> <div> <p>Read the <a href=\"http://dddsamplenet.codeplex.com/Thread/View.aspx?ThreadId=221114&ANCHOR#Post472892\">full discussion online</a>.</p> <p>To add a post to this discussion, reply to this email (<a href=\"mailto:dddsamplenet@discussions.codeplex.com?subject=[dddsamplenet:221114]\">dddsamplenet@discussions.codeplex.com</a>)</p>\r\n <p>To start a new discussion for this project, email <a href=\"mailto:dddsamplenet@discussions.codeplex.com\">dddsamplenet@discussions.codeplex.com</a></p> <p>You are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"https://dddsamplenet.codeplex.com/subscriptions/thread/project/edit\">unsubscribe or change your settings</a> on codePlex.com.</p>\r\n <p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at <a href=\"http://codeplex.com\">codeplex.com</a></p> </div> </div></div> </blockquote>\r\n</div><br></div>",
+    "PostedDate": "2010-07-26T22:24:13.36-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "473217",
+    "ThreadId": "221114",
+    "Html": "<p>Hi Szymon,</p>\r\n<p>Thank you very much, it works after i add &quot;domain&quot; and &quot;reporting&quot; schema. However, i still got error in &quot;DDDSample-CQRS-EventSourcing-Simplified&quot; application. When i Click on Booking Button, it throw and exception &quot;<em>The current type, NServiceBus.IBus, is an interface and cannot be constructed. Are you missing a type mapping?</em>&quot; when program runs in following lines of code &quot;&nbsp;return (IController)ServiceLocator.Current.GetInstance(controllerType);&quot;</p>\r\n<p>I try in another application &quot;DDDSample-CQRS-EventSourcing&quot;, However it show &quot;Attempted to read or write protected memory. This is often an indication that other memory is corrupt&quot; message and cannot further process.</p>\r\n<p>&nbsp;</p>\r\n<p>Any idea?</p>\r\n<p>&nbsp;</p>\r\n<p>Thank you,</p>\r\n<p>&nbsp;</p>\r\n<p>Regads and Meeta,</p>\r\n<p>Bhagi Raj Limbu</p>",
+    "PostedDate": "2010-07-27T08:00:23.187-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "478640",
+    "ThreadId": "221114",
+    "Html": "Hi<div><br></div><div>Sorry for such a late answer.</div><div><br></div><div>The &quot;<em>The current type, NServiceBus.IBus, is an interface and cannot be constructed. Are you missing a type mapping?&quot; </em>error can be caused by another error happening before. Because DI container is set up in global.asax on application start, when there is an error during this startup procedure, it never gets finished and IBus interface is not registered. Try to restart webserver and tell me what is the very first error you get when running application.</div>\r\n<div><br></div><div>The second one could be related to hosting NServiceBus in web environment. As for me, restarting a web server usually helped.</div><div><br></div><div>Szymon<br><br><div>2010/7/27 sailunglimbu <span dir=ltr>&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span><br>\r\n<blockquote style=\"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex\">   <div> <p>From: sailunglimbu</p> <div><p>Hi Szymon,</p>\r\n<p>Thank you very much, it works after i add &quot;domain&quot; and &quot;reporting&quot; schema. However, i still got error in &quot;DDDSample-CQRS-EventSourcing-Simplified&quot; application. When i Click on Booking Button, it throw and exception &quot;<em>The current type, NServiceBus.IBus, is an interface and cannot be constructed. Are you missing a type mapping?</em>&quot; when program runs in following lines of code &quot; return (IController)ServiceLocator.Current.GetInstance(controllerType);&quot;</p>\r\n\r\n<p>I try in another application &quot;DDDSample-CQRS-EventSourcing&quot;, However it show &quot;Attempted to read or write protected memory. This is often an indication that other memory is corrupt&quot; message and cannot further process.</p>\r\n\r\n<p> </p>\r\n<p>Any idea?</p>\r\n<p> </p>\r\n<p>Thank you,</p>\r\n<p> </p>\r\n<p>Regads and Meeta,</p>\r\n<p>Bhagi Raj Limbu</p></div><div> <div> <p>Read the <a href=\"http://dddsamplenet.codeplex.com/Thread/View.aspx?ThreadId=221114&ANCHOR#Post473217\">full discussion online</a>.</p> <p>To add a post to this discussion, reply to this email (<a href=\"mailto:dddsamplenet@discussions.codeplex.com?subject=[dddsamplenet:221114]\">dddsamplenet@discussions.codeplex.com</a>)</p>\r\n <p>To start a new discussion for this project, email <a href=\"mailto:dddsamplenet@discussions.codeplex.com\">dddsamplenet@discussions.codeplex.com</a></p> <p>You are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"https://dddsamplenet.codeplex.com/subscriptions/thread/project/edit\">unsubscribe or change your settings</a> on codePlex.com.</p>\r\n <p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at <a href=\"http://codeplex.com\">codeplex.com</a></p> </div> </div></div> </blockquote>\r\n</div><br></div>",
+    "PostedDate": "2010-08-10T08:48:34.077-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "479726",
+    "ThreadId": "221114",
+    "Html": "<p>Hi</p>\r\n<p>After i try another sample application &quot;DDDSample-CQRS&quot;, however, i got two errors. First, error occur when initialize after &quot;Home Controller&quot;, a controllerType is always &quot;Null&quot;.</p>\r\n<p>&nbsp;</p>\r\n<p><img src=\"http://img138.imageshack.us/img138/7506/initializeerror2.jpg\" alt=\"http://img138.imageshack.us/img138/7506/initializeerror2.jpg\"></p>\r\n<p>&nbsp;</p>\r\n<p>Similary, after i click book new cargo arrangement. It throws an error when publishing events.</p>\r\n<p>&nbsp;</p>\r\n<p><img src=\"http://img42.imageshack.us/img42/5364/cargoregisteredeventhan.jpg\" alt=\"\"></p>\r\n<p>&nbsp;</p>\r\n<p>Could you help me out, what is reason behind of this errors?</p>\r\n<p>&nbsp;</p>\r\n<p>thank you,</p>\r\n<p>&nbsp;</p>\r\n<p>Regards and Meeta,</p>\r\n<p>Bhagi Raj Limbu</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-08-12T07:47:36.513-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

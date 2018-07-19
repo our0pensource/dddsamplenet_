@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "414548",
+    "ThreadId": "203930",
+    "Html": "<p>Hi Simon,</p>\r\n<p>I downloaded the source code and there is onlu Vanilla and CQRS version. Is it correct ? You're working on Linq2SQL and Event Sourcing version ?</p>\r\n<p>Thanks,</p>\r\n<p>Thomas</p>",
+    "PostedDate": "2010-03-05T04:28:55.367-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "414965",
+    "ThreadId": "203930",
+    "Html": "<p>Thomas, have you tried this: http://dddsamplenet.codeplex.com/SourceControl/changeset/view/42106# and the download button on the right?</p>",
+    "PostedDate": "2010-03-06T06:20:52.207-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "415343",
+    "ThreadId": "203930",
+    "Html": "<p>Yes, that's why I'm writing this :) In the zip I see DDDSample and DDDSample-CQRS. The Event sourcing should be in one of them ? the same for Linq2SQL ?</p>",
+    "PostedDate": "2010-03-08T00:59:33.45-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "415351",
+    "ThreadId": "203930",
+    "Html": "<p>Yes, they should be there. I've tried to download this myself and it is working. It worked also from my friends' machine. Are you sure you are downloading from the latest changeset? If so, please contact me on szymon@pobiega.com and I will send you the sources via mail if nothing else works.</p>",
+    "PostedDate": "2010-03-08T01:17:36.927-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "415392",
+    "ThreadId": "203930",
+    "Html": "<p>Downloaded the latest version and all is perfect.</p>\r\n<p>I checked the version that I had before and it was 40819 that's why I didn't see it. I'm sorry for that.</p>\r\n<p>Thanks,</p>\r\n<p>Thomas</p>",
+    "PostedDate": "2010-03-08T03:33:52.08-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "458456",
+    "ThreadId": "203930",
+    "Html": "Hi Simon,\r\n\r\n            How come CQRS, plain vanilla and CQRS + Event Sourcing variants doesn't have the same AggregateRoots design ? \r\n\r\nThanks.",
+    "PostedDate": "2010-06-22T04:54:15.693-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "458530",
+    "ThreadId": "203930",
+    "Html": "<p>I experimented a bit with aggregate design. At first it was a little bit different from original DDDSample's but not Vanilla version is 100% compatible (at least I hope so). I haven't upgraded other versions since they are focused on showing possible different routes concerning technology, not domain design. One exception is layered model which is focused on alternative domain model design&nbsp;strengthened by introducing layers.&nbsp;</p>",
+    "PostedDate": "2010-06-22T07:36:41.94-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

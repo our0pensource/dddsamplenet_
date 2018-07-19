@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hello, It seems there is an issue with NotEqualOperator in ValueObject. I think it should look like this :\n \nprotected static bool NotEqualOperator(ValueObject left, ValueObject right)\n        {\n            return !EqualOperator(left, right);\n        }",
+    "LastUpdatedDate": "2013-06-14T00:17:54.743-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "dddsamplenet",
+    "ReportedDate": "2010-04-02T07:39:56.163-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "ValueObject NotEqualOperator problem",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 5654
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thank you Thomas. Added tests for inequality operator which made bug show up and fiexed it in all branches.",
+      "PostedDate": "2010-04-11T07:07:57.963-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2010-04-11T07:08:54.61-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-14T13:08:17.79-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:12:26.223-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:12:26.657-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-06-14T00:17:54.743-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

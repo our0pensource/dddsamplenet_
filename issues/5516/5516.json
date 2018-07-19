@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hello,\n \nI think that to help understanding I could be good to include Domain Model (class driagram for exemple or another) and describe the business rules. It will be a good starting point without digging into the book or the code.\n \nThanks,\n \nThomas",
+    "LastUpdatedDate": "2013-06-14T00:17:55.153-07:00",
+    "PlannedForRelease": "0.6",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "dddsamplenet",
+    "ReportedDate": "2010-03-08T03:39:22.86-08:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Domain Model and Business Rules",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 5516
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I added diagrams and some other documentation in the 'documentation' section of this site.",
+      "PostedDate": "2010-03-08T10:44:30.17-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2010-03-08T10:45:03.493-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-14T13:08:18.473-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:12:26.9-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:12:27.037-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-06-14T00:17:55.153-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

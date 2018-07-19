@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "813146",
+    "ThreadId": "349369",
+    "Html": "\r\n<p>Error: The project type is not supported by this installation.</p>\r\n<p>Can you help??</p>\r\n",
+    "PostedDate": "2012-03-20T11:45:46.827-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "895320",
+    "ThreadId": "349369",
+    "Html": "<p>The project is an MVC project, make sure you have the right MVC template installed... I believe it is MVC 2.</p>",
+    "PostedDate": "2012-08-03T11:36:26.21-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]
